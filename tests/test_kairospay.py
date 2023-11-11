@@ -1,1 +1,1 @@
-from kairospay import kairospay
+from kairospay import paystack
