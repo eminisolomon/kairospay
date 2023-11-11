@@ -1,4 +1,3 @@
-
 def getlive(live):
     if live == True:
         return 'https://api.monnify.com'
