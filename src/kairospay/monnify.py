@@ -80,22 +80,26 @@ class Monnify:
     # endpoint will then create a virtual account number in the name of customer
     # suplied and return the details of the account created.
 
-    def reserve_account(self, token, credentials, accountReference,  accountName, customerEmail, customerName, customerBvn, availableBank):
+    def reserve_account(self, token, credentials, accountReference, accountName, customerEmail, customerName, customerBvn=None, availableBank=None):
         live = credentials['is_live']
-        if live == True or live == False:
+        if live is True or live is False:
             contractCode = credentials['contract']
             baseurl = getlive(live)
             url = f'{baseurl}/api/v1/bank-transfer/reserved-accounts'
+
             payload = {
                 "accountReference": accountReference,
                 "accountName": accountName,
                 "currencyCode": "NGN",
                 "contractCode": contractCode,
                 "customerEmail": customerEmail,
-                "bvn": customerBvn,
                 "customerName": customerName,
                 "getAllAvailableBanks": availableBank
             }
+
+            if customerBvn is not None:
+                payload["bvn"] = customerBvn
+
             headers = {
                 'Content-Type': 'application/json',
                 'Authorization': token
