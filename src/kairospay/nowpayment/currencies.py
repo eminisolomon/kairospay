@@ -1,4 +1,4 @@
-from kairospay.nowpayments.base import BaseAPI
+from src.kairospay.nowpayment.core.base import BaseAPI
 
 
 class CurrencyAPI(BaseAPI):
