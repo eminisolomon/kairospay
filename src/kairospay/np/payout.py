@@ -1,8 +1,8 @@
 import json
 from typing import Union, List
 
-from src.kairospay.nowpayment.core.base import BaseAPI
-from src.kairospay.nowpayment.core.decorators import jwt_required
+from src.kairospay.np.core.base import BaseAPI
+from src.kairospay.np.core.decorators import jwt_required
 from kairospay.models.np import WithdrawalModel
 
 
