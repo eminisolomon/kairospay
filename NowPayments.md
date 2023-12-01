@@ -35,4 +35,4 @@ currencies = np.currency.get_available_currencies()
 
 ```
 
-If you're looking for a more detailed example, check out the [examples](https://github.com/its0x4d/nowpayments/tree/main/examples).
+If you're looking for a more detailed example, check out the [examples](https://github.com/eminisolomon/kairospay/tree/maser/tests/np).
