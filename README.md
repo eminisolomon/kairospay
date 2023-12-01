@@ -6,7 +6,7 @@
 [![Downloads](https://pepy.tech/badge/kairospay/week)](https://pepy.tech/project/kairospay)
 ![Twitter Follow](https://img.shields.io/twitter/follow/eminisolomon?style=social)
 
-payments library for Monnify, BinancePay, NowPayments and Paystack
+Payments library for Monnify, BinancePay and NowPayments
 
 ## Installation
 
